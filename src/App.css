@@ -4,8 +4,8 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  overflow: hidden;
   background-color: black;
+  overflow-x: hidden;
   /* sets full-page black */
 }
 
@@ -30,16 +30,26 @@
   background-image: url('/src/assets/horse2.png');
   background-position: center -700px;
   background-size: cover;
-  margin-bottom: 80%;
+  margin-bottom: 10%;
   padding-top: 0px;
   height: 95vh;
-
-
 }
 
 
 #homepage-container {
   width: 100%;
+}
+
+#council-members {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+}
+
+#council-members-header {
+  font-size: x-large;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 .display-4 {
@@ -66,12 +76,31 @@
 
 }
 
+#ryders-law-bio {
+  margin-bottom: 20px;
+  color: white;
+  font-size: xx-large;
+  margin-bottom: 10%;
+}
+
+#fight-is-not-over {
+  margin-top: 30px;
+  font-family: monospace;
+  font-size: x-large;
+  margin-bottom: 10%;
+}
+
+#ryders-law-image{
+  margin-bottom: 10%;
+}
+
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 250%;
+  height: 280%;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0);
   /* start transparent */
@@ -137,6 +166,11 @@
     color: white;
   }
 
+  #council-members {
+    display: flex;
+    flex-direction: column;
+  }
+
 
 
 
@@ -152,6 +186,7 @@
   }
 
 
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -161,6 +196,7 @@
     height: 95vh;
 
   }
+
 
 
 }
